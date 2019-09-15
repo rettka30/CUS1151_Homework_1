@@ -23,6 +23,23 @@ public class CUS1151_Rettko_HW1 {
       return result;
    }
    
+   public static void removeInRange(List list, int value, int min, int max) { 
+      Iterator itr = list.iterator(); 
+      //to do 
+      int i = 0;
+      while(itr.hasNext()) {
+         if((i >= min) && (i < max)) {
+            if(itr.next().equals(value)) {
+               itr.remove();
+            }
+            i++;
+         } else {
+            Object j = itr.next();
+            i++;
+         }
+      }
+   }
+   
    public static void main(String[] args) {
         ArrayList<Object> one = new ArrayList<Object>();
            one.add(1);
@@ -49,6 +66,33 @@ public class CUS1151_Rettko_HW1 {
         System.out.print("\nAlternating List: ");
         for (Object a : alternate(one, two)) {
          System.out.print(a + " ");
+        }
+        ArrayList<Object> three = new ArrayList<Object>();
+           three.add(0);
+           three.add(0);
+           three.add(2);
+           three.add(0);
+           three.add(4);
+           three.add(0);
+           three.add(6);
+           three.add(0);
+           three.add(8);
+           three.add(0);
+           three.add(10);
+           three.add(0);
+           three.add(12);
+           three.add(0);
+           three.add(14);
+           three.add(0);
+           three.add(16);
+        System.out.print("\nList Three: ");
+        for (Object b : three) {
+         System.out.print(b + " ");
+        }
+        removeInRange(three, 0, 5, 13);
+        System.out.print("\nList Three Modified: ");
+        for (Object m : three) {
+         System.out.print(m + " ");
         }
    }
 }
