@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class CUS1151_Rettko_HW1 {
 
+   //Question 3: Takes two lists and creates new list where each position alternates between each element in the lists.
    public static List alternate(List list1, List list2) { 
       List result = new ArrayList(); 
       Iterator i1 = list1.iterator(); 
@@ -23,6 +24,7 @@ public class CUS1151_Rettko_HW1 {
       return result;
    }
    
+   //Question 4: Removes a certain value in a certain range in the list
    public static void removeInRange(List list, int value, int min, int max) { 
       Iterator itr = list.iterator(); 
       //to do 
@@ -89,8 +91,11 @@ public class CUS1151_Rettko_HW1 {
         for (Object b : three) {
          System.out.print(b + " ");
         }
-        removeInRange(three, 0, 5, 13);
-        System.out.print("\nList Three Modified: ");
+        int value = 0;
+        int min = 5;
+        int max = 13;
+        removeInRange(three, value, min, max);
+        System.out.print("\nList Three Modified with "+value+" removed between "+min+" and "+max+": ");
         for (Object m : three) {
          System.out.print(m + " ");
         }

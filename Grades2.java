@@ -32,6 +32,7 @@ Prints the options menu and returns the letter that the user types does not chec
    public static void printGrades(Map<Student, String> gradeMap)
    {
       Set<Student> studentSet = gradeMap.keySet();
+      System.out.println("List of Students:");
       for (Student student : studentSet)
       {
          System.out.printf("%s: %s\n", student, gradeMap.get(student));
