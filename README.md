@@ -1,7 +1,6 @@
 # CUS1151_Homework_1
-Github Link:https://github.com/rettka30/CUS1151_Homework_1
-
-#Question 1 Output:
+Github Link: https://github.com/rettka30/CUS1151_Homework_1
+# Question 1 Output:
 A)dd student.
 R)emove student.
 M)odify grades.
@@ -106,7 +105,7 @@ Q)uit.
 Select one: 
  Q
  
-#Question 2 Output:
+# Question 2 Output:
 A)dd student.
 R)emove student.
 M)odify grades.
@@ -222,11 +221,11 @@ Q)uit.
 Select one: 
  Q
  
-#Question 3 and 4 Output:
-#Question 3:
+# Question 3 and 4 Output:
+## Question 3:
 List One: 1 2 3 4 5 
 List Two: 6 7 8 9 10 11 12 
 Alternating List: 1 6 2 7 3 8 4 9 5 10 11 12 
-#Question 4:
+## Question 4:
 List Three: 0 0 2 0 4 0 6 0 8 0 10 0 12 0 14 0 16 
 List Three Modified with 0 removed between 5 and 13: 0 0 2 0 4 6 8 10 12 0 14 0 16 
